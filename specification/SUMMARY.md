@@ -1,10 +1,15 @@
 # Table of contents
 
-* [🏠 Overview](README.md)
-* [Concepts](sections/README.md)
-  * [Flag Evaluation API](sections/01-flag-evaluation.md)
-  * [Provider](sections/02-providers.md)
-  * [Evaluation Context](sections/03-evaluation-context.md)
-  * [Hooks](sections/04-hooks.md)
-* [Types and Data Structures](types.md)
-* [Glossary](glossary.md)
+* [Introduction](README.md)
+
+## Concepts
+
+* [Flag Evaluation API](concepts/01-flag-evaluation.md)
+* [Provider](concepts/02-providers.md)
+* [Evaluation Context](concepts/03-evaluation-context.md)
+* [Hooks](concepts/04-hooks.md)
+
+## Resources
+
+* [Types and Data Structures](resources/types.md)
+* [Glossary](resources/glossary.md)

@@ -20,7 +20,7 @@ The context might contain information about the end-user, the application, the h
 
 NOTE: Field casing is not specified, and should be chosen in accordance with language idioms.
 
-see: [types](../types.md)
+see: [types](../resources/types.md)
 
 #### Requirement 3.1.1
 
@@ -32,7 +32,7 @@ The targeting key uniquely identifies the subject (end-user, or client service) 
 
 > The evaluation context **MUST** support the inclusion of custom fields, having keys of type `string`, and values of type `boolean | string | number | datetime | structure`.
 
-see: [structure](../types.md#structure), [datetime](../types.md#datetime)
+see: [structure](../resources/types.md#structure), [datetime](../resources/types.md#datetime)
 
 #### Requirement 3.1.3
 

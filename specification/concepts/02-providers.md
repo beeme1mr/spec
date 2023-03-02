@@ -41,7 +41,7 @@ provider.getMetadata().getName(); // "my-custom-provider"
 resolveBooleanValue(flagKey, defaultValue, context);
 ```
 
-see: [flag resolution structure](../types.md#resolution-details), [flag value resolution](../glossary.md#resolving-flag-values)
+see: [flag resolution structure](../resources/types.md#resolution-details), [flag value resolution](../resources/glossary.md#resolving-flag-values)
 
 **Condition 2.2.2**
 
@@ -81,7 +81,7 @@ The value of the variant field might only be meaningful in the context of the fl
 
 > The `provider` **SHOULD** populate the `resolution details` structure's `reason` field with `"STATIC"`, `"DEFAULT",` `"TARGETING_MATCH"`, `"SPLIT"`, `"CACHED"`, `"DISABLED"`, `"UNKNOWN"`, `"ERROR"` or some other string indicating the semantic reason for the returned flag value.
 
-As indicated in the definition of the [`resolution details`](../types.md#resolution-details) structure, the `reason` should be a string. This allows providers to reflect accurately why a flag was resolved to a particular value.
+As indicated in the definition of the [`resolution details`](../resources/types.md#resolution-details) structure, the `reason` should be a string. This allows providers to reflect accurately why a flag was resolved to a particular value.
 
 **Requirement 2.2.6**
 
@@ -93,7 +93,7 @@ As indicated in the definition of the [`resolution details`](../types.md#resolut
 
 The provider might throw an exception, return an error, or populate the `error code` object on the returned `resolution details` structure to indicate a problem during flag value resolution.
 
-See [error code](../types.md#error-code) for details.
+See [error code](../resources/types.md#error-code) for details.
 
 ```typescript
 // example throwing an exception with an error code and optional error message.

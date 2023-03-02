@@ -5,16 +5,16 @@ sidebar_position: 0
 description: An introduction to the OpenFeature specification.
 ---
 
-# 🏠 Overview
+# Introduction
 
 ## Contents
 
-* [Glossary](glossary.md)
-* [Types](types.md)
-* [Evaluation API](sections/01-flag-evaluation.md)
-* [Providers](sections/02-providers.md)
-* [Evaluation Context](sections/03-evaluation-context.md)
-* [Hooks](sections/04-hooks.md)
+* [Glossary](resources/glossary.md)
+* [Types](resources/types.md)
+* [Evaluation API](concepts/01-flag-evaluation.md)
+* [Providers](concepts/02-providers.md)
+* [Evaluation Context](concepts/03-evaluation-context.md)
+* [Hooks](concepts/04-hooks.md)
 
 ## Conformance
 
