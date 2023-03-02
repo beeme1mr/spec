@@ -9,12 +9,17 @@ description: An introduction to the OpenFeature specification.
 
 ## Contents
 
-* [Glossary](resources/glossary.md)
-* [Types](resources/types.md)
+### Concepts
+
 * [Evaluation API](concepts/01-flag-evaluation.md)
 * [Providers](concepts/02-providers.md)
 * [Evaluation Context](concepts/03-evaluation-context.md)
 * [Hooks](concepts/04-hooks.md)
+
+### Resources
+
+* [Glossary](resources/glossary.md)
+* [Types](resources/types.md)
 
 ## Conformance
 
