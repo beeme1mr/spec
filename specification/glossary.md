@@ -1,48 +1,12 @@
 ---
 title: Glossary
-description: A list of terms used within the OpenFeature specification.
 sidebar_position: 1
+description: A list of terms used within the OpenFeature specification.
 ---
 
 # Glossary
 
 This document defines some terms that are used across this specification.
-
-<details>
-<summary>Table of Contents</summary>
-
-<!-- toc -->
-
-- [Feature Flag](#feature-flag)
-- [User Roles](#user-roles)
-  - [Application Author](#application-author)
-  - [Application Integrator](#application-integrator)
-  - [Provider Author](#provider-author)
-  - [Integration Author](#integration-author)
-  - [Library Author](#library-author)
-- [Common](#common)
-  - [Feature Flag SDK](#feature-flag-sdk)
-  - [Feature Flag API](#feature-flag-api)
-  - [Evaluation API](#evaluation-api)
-  - [Flag Management System](#flag-management-system)
-  - [Provider](#provider)
-  - [Integration](#integration)
-  - [Evaluation Context](#evaluation-context)
-  - [Evaluating Flag Values](#evaluating-flag-values)
-  - [Resolving Flag Values](#resolving-flag-values)
-- [Flagging specifics](#flagging-specifics)
-  - [Flag](#flag)
-  - [Flag Key](#flag-key)
-  - [Variant](#variant)
-  - [Values](#values)
-  - [Targeting](#targeting)
-  - [Targeting Key](#targeting-key)
-  - [Fractional Evaluation](#fractional-evaluation)
-  - [Rule](#rule)
-
-<!-- tocstop -->
-
-</details>
 
 ## Feature Flag
 
@@ -60,7 +24,7 @@ A developer who is setting up or configuring an application or service to use th
 
 ### Provider Author
 
-The maintainer of an API-compliant [provider](./sections/02-providers.md) which implements the necessary interfaces required for flag evaluation.
+The maintainer of an API-compliant [provider](sections/02-providers.md) which implements the necessary interfaces required for flag evaluation.
 
 ### Integration Author
 
@@ -84,7 +48,7 @@ Provider & Integration authors adhere to the API to add support for their featur
 
 ### Evaluation API
 
-The subset of the [Feature Flag API](#feature-flag-api) that the Application Author uses to evaluate flags.
+The subset of the [Feature Flag API](glossary.md#feature-flag-api) that the Application Author uses to evaluate flags.
 
 ### Flag Management System
 
@@ -92,7 +56,7 @@ A source-of-truth for flag values and rules. Flag management systems may include
 
 ### Provider
 
-An SDK-compliant implementation which resolves flag values from a particular flag management system, allowing the use of the [Evaluation API](./sections/01-flag-evaluation.md#13-flag-evaluation) as an abstraction for the system in question.
+An SDK-compliant implementation which resolves flag values from a particular flag management system, allowing the use of the [Evaluation API](sections/01-flag-evaluation.md#13-flag-evaluation) as an abstraction for the system in question.
 
 ### Integration
 
@@ -106,9 +70,9 @@ Context object for flag evaluation, which may contain information about the runt
 
 The process of retrieving a feature flag value in it's entirety, including:
 
-- any effects resulting from hooks
-- resolving a flag value from a configured provider
-- falling back to a supplied default, in the case of abnormal execution
+* any effects resulting from hooks
+* resolving a flag value from a configured provider
+* falling back to a supplied default, in the case of abnormal execution
 
 ### Resolving Flag Values
 
@@ -140,7 +104,7 @@ A variant is a semantic identifier for a value. This allows for referral to part
 
 Individual variants have values associated with them. These values adhere to the flag's type. For the `header-order` variants, we may have values like:
 
-```text
+```
 reverse: [5,4,3,2,1]
 wonky: [3,5,2,1,4]
 standard: [1,2,3,4,5]
